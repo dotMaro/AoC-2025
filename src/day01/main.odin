@@ -5,7 +5,7 @@ import "core:strings"
 import "core:strconv"
 
 main :: proc() {
-	input := #load("../../inputs/day01.txt", string)
+	input :: #load("../../inputs/day01.txt", string)
 
 	position := 50
 	landed_at_zero_between_instructions_count := 0
