@@ -11,7 +11,7 @@ main :: proc() {
 
 	junction_boxes := parse_junction_boxes(input)
 	for i in 0..<1000 {
-		fmt.printfln("%d/%d", i, 999)
+		fmt.printfln("%d/%d", i, 1000)
 		connect_closest_unconnected_junction_boxes(&junction_boxes)
 	}
 	fmt.println("Part 1.", multiply_circuit_sizes(junction_boxes))
