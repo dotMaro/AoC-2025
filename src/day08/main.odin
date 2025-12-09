@@ -78,6 +78,7 @@ connect_closest_unconnected_junction_boxes :: proc(boxes: ^[]Junction_Box) -> (a
 			for c in b1.connections {
 				if box_equals(c^, b2) {
 					already_directly_connected = true
+					break
 				}
 			}
 			if already_directly_connected {
